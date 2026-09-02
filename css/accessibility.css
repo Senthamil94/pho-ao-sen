@@ -7,7 +7,7 @@
   position:absolute;left:16px;top:-80px;z-index:10000;
   background:var(--green,#7C9137);color:#fff;
   padding:10px 16px;border-radius:6px;
-  font-family:var(--body,"Be Vietnam Pro",sans-serif);
+  font-family:var(--body,"Montserrat",sans-serif);
   font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
 }
 .skip-link:focus{top:16px;outline:3px solid var(--tan,#E1C099);outline-offset:3px}
@@ -343,6 +343,10 @@ html.a11y-dark-mode .lede,
 html.a11y-dark-mode .dish p{
   color:#c8bfb5 !important;
 }
+
+html.a11y-dark-mode .room{background:#2A2118 !important}
+html.a11y-dark-mode .room-label,
+html.a11y-dark-mode .room-title span{color:#6f8430 !important}
 
 html.a11y-enhanced-focus :focus-visible{
   outline:3px solid #E1C099 !important;
