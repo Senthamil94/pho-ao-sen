@@ -248,7 +248,6 @@ html.a11y-high-contrast .sect,
 html.a11y-high-contrast .bowl,
 html.a11y-high-contrast .services,
 html.a11y-high-contrast .visit,
-html.a11y-high-contrast .band,
 html.a11y-high-contrast .page-hero,
 html.a11y-high-contrast .catnav,
 html.a11y-high-contrast .mcat,
@@ -310,15 +309,13 @@ html.a11y-dark-mode .catnav{
 html.a11y-dark-mode .hero,
 html.a11y-dark-mode .sect,
 html.a11y-dark-mode .page-hero,
-html.a11y-dark-mode .menu-cta,
-html.a11y-dark-mode footer{
+html.a11y-dark-mode .menu-cta{
   background:#241910 !important;
 }
 
 html.a11y-dark-mode .bowl,
 html.a11y-dark-mode .services,
-html.a11y-dark-mode .visit,
-html.a11y-dark-mode .band{
+html.a11y-dark-mode .visit{
   background:#1a120c !important;
 }
 
