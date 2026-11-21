@@ -349,3 +349,14 @@ footer .btn:hover{background:#fff;border-color:#fff;color:var(--ink)}
   header#nav.stuck .brand img{height:86px}
   .hero-cta .btn.lg{padding:13px 18px}
 }
+
+/* ---------- Promo flyer ---------- */
+#flyer{position:fixed;inset:0;z-index:10000;background:rgba(20,16,12,.72);display:none;align-items:center;justify-content:center;padding:28px 18px}
+#flyer.on{display:flex}
+.flyer-card{position:relative;width:min(92vw,480px)}
+.flyer-card a{display:block}
+.flyer-card img{width:100%;height:auto;border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.45)}
+#flyer-close{position:absolute;top:-14px;right:-14px;width:40px;height:40px;border-radius:50%;border:0;background:var(--ink,#1c1c1c);color:#fff;font-size:26px;line-height:1;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.35)}
+#flyer-close:hover,#flyer-close:focus-visible{background:var(--green-d,#2f5d3a);outline:2px solid #fff;outline-offset:2px}
+body.flyer-open{overflow:hidden}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

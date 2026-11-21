@@ -136,4 +136,27 @@ $$('a[href^="#"]').forEach(a=>{
     scrollTo({top:t.getBoundingClientRect().top+scrollY-off, behavior:"smooth"});
   });
 });
+
+/* Promo flyer. Set to false to hide without removing the image. */
+var FLYER_ENABLED = true;
+function closeFlyer(){
+  var flyer = $("#flyer");
+  if(!flyer) return;
+  flyer.classList.remove("on");
+  flyer.hidden = true;
+  document.body.classList.remove("flyer-open");
+}
+function openFlyer(){
+  var flyer = $("#flyer");
+  if(!flyer || !FLYER_ENABLED) return;
+  flyer.hidden = false;
+  flyer.classList.add("on");
+  document.body.classList.add("flyer-open");
+}
+var flyerClose = $("#flyer-close");
+if(flyerClose) flyerClose.addEventListener("click", closeFlyer);
+var flyerEl = $("#flyer");
+if(flyerEl) flyerEl.addEventListener("click", function(e){ if(e.target === flyerEl) closeFlyer(); });
+document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeFlyer(); });
+if(FLYER_ENABLED) setTimeout(openFlyer, 500);
 })();
